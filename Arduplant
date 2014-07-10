@@ -20,7 +20,7 @@ const int analogInPin = A1;
 int sensorValue = 0;
 
 // if the readings from the soil sensor drop below this number, then turn on the pump
-int dryValue = 670;
+int dryValue = 800;
 
 void setup() {
   
@@ -38,8 +38,9 @@ void loop() {
   //Increasing the delay will increase the amount of water pumped
   if(sensorValue < dryValue){
     digitalWrite(12, HIGH);
-    delay(1000);
+    delay(900);
     digitalWrite(12, LOW);
+    delay(60000);
   }  
     
   // print the sensor to the serial monitor:
