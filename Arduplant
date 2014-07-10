@@ -20,7 +20,7 @@ const int analogInPin = A1;
 int sensorValue = 0;
 
 // if the readings from the soil sensor drop below this number, then turn on the pump
-int dryValue = 800;
+int dryValue = 780;
 
 void setup() {
   
