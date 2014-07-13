@@ -50,5 +50,5 @@ void loop() {
   
 
   //slow your roll - I mean... slow down the code a little
-  delay(10000);                     
+  delay(60000);                     
 }
